@@ -1,13 +1,17 @@
 #include <Arduino.h>
 #include "LED.h"
+
 const uint8_t pinBotao = 4;
-LED ledAzul(39);
+
+
+LED ledVermelho(39);
+
 bool estadoAnteriorBotao = HIGH;
 uint8_t modo = 0;
 void setup()
 {
 pinMode(pinBotao, INPUT_PULLUP);
-ledAzul.ligar();
+ledVermelho.ligar();
 }
 void loop()
 {
@@ -23,17 +27,17 @@ estadoAnteriorBotao = estadoAtualBotao;
 switch (modo)
 {
 case 0:
-    ledAzul.desligar();
+    ledVermelho.desligar();
     break;
 
 case 1:
-    ledAzul.ligar();
+    ledVermelho.ligar();
     break;
 
 case 2:
-    ledAzul.piscar(2.0f);
+    ledVermelho.piscar(2.0f);
     break;
 }
 
-ledAzul.update();
+ledVermelho.update();
 }

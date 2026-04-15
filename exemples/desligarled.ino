@@ -4,10 +4,10 @@
 LED ledAzul(39);
 void setup()
 {
-LED ligar();
-LED DESLIGAR();
+ledVermelho.ligar(false);
+ledVermelho.desligar(true);
 }
 void loop()
 {
-ledAzul.update();
+ledVermelho.update();
 }

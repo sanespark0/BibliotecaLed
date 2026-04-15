@@ -1,14 +1,14 @@
 #include <Arduino.h>
 #include "LED.h"
 
-LED ledAzul(40);
+LED ledVermelho(40);
 
 void setup()
 {
-LED ligar();
+ledVermelho.ligar();
 }
 void loop()
 {
-ledAzul.alternar();
-ledAzul.update();
+ledVermelho.alternar();
+ledVermelho.update();
 }

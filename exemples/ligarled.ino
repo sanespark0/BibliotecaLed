@@ -5,8 +5,8 @@ LED ledVermelho(40);
 
 void setup()
 {
-LED ligar();
-LED estadoPiscar();
+ledVermelho.ligar(true);
+ledVermelho.estadoPiscar(false);
 }
 
 void loop()
